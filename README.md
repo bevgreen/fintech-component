@@ -1,6 +1,7 @@
 # Fintech Strategy Card Component
 
-A standalone React + TypeScript UI component demonstrating a **strategy selection card** for a fintech-style dashboard.
+A standalone React + TypeScript UI component demonstrating a **strategy selection card**.
+
 ![Strategy Card Demo](src/assets/demo.png)
 ---
 
