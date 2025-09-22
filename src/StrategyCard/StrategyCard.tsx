@@ -27,7 +27,7 @@ function StrategyCard({
       <h3>{title}</h3>
       <p>{description}</p>
       <p>Expected Return: {expectedReturn}</p>
-      <p>Risk: {riskLevel}</p>
+      <p className={`risk ${riskLevel.toLowerCase()}`}>Risk: {riskLevel}</p>
     </div>
   );
 }

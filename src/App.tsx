@@ -1,8 +1,6 @@
 import Cards from './CardContainer/CardContainer'
 import './App.css'
 
-
-
 function App() {
   return (
     <div className="App">
