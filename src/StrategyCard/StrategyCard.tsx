@@ -22,7 +22,7 @@ function StrategyCard({
 }: StrategyCardProps) {
      const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
     if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();  // Prevent scrolling when Space is pressed
+      e.preventDefault(); 
       onSelect(id);
     }
   }
