@@ -1,0 +1,16 @@
+.strategy-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.strategy-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.strategy-card.selected {
+  border-color: #3b82f6; 
+  background-color: #e0f2fe; 
+}
