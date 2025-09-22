@@ -21,7 +21,9 @@ function StrategyCard({
   onSelect
 }: StrategyCardProps) {
   return (
-    <div onClick={() => onSelect(id)}>
+    <div 
+    className={`strategy-card ${selected ? 'selected' : ''}`}
+    onClick={() => onSelect(id)}>
       <h3>{title}</h3>
       <p>{description}</p>
       <p>Expected Return: {expectedReturn}</p>

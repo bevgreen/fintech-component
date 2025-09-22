@@ -1,7 +1,9 @@
 .strategy-card {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  border-radius: 0.5rem;
+  background-color: white;
+  color: black; 
+    border-radius: 10px;
+    width: 270px;
+    height: 200px;
   cursor: pointer;
   transition: box-shadow 0.2s, border-color 0.2s;
 }
