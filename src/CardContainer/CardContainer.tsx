@@ -1,12 +1,12 @@
-import './CardContainer.css'
-import StrategyCard from '../StrategyCard/StrategyCard'
-import { useState } from 'react'
+import './CardContainer.css';
+import StrategyCard from '../StrategyCard/StrategyCard';
+import { useState } from 'react';
 
-function Cards(){
-    const [selectedId, setSelectedId] = useState<string | null>(null);
+function Cards() {
+  const [selectedId, setSelectedId] = useState<string | null>(null);
 
-    const strategies = [
-            {
+  const strategies = [
+    {
       id: "1",
       title: "Conservative Growth",
       description: "Stable assets with modest growth.",
@@ -27,8 +27,17 @@ function Cards(){
       expectedReturn: "15% annually",
       riskLevel: "High" as const,
     },
-    ]
-   return (
+  ];
+
+  const handleSelect = (id: string) => {
+    if (selectedId === id) {
+      setSelectedId(null);
+    } else {
+      setSelectedId(id);   
+    }
+  };
+
+  return (
     <div className="cards-container">
       {strategies.map((s) => (
         <StrategyCard
@@ -39,7 +48,7 @@ function Cards(){
           expectedReturn={s.expectedReturn}
           riskLevel={s.riskLevel}
           selected={selectedId === s.id}
-          onSelect={setSelectedId}
+          onSelect={handleSelect}  
         />
       ))}
     </div>
